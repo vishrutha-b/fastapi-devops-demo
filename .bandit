@@ -1,4 +1,5 @@
-[bandit]
-exclude = tests,venv,.venv
-severity = low
-confidence = low
+skips: []
+exclude_dirs:
+  - tests
+  - venv
+  - .venv
