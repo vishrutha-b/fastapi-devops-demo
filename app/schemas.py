@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel
 
 
@@ -12,12 +13,12 @@ class MessageResponse(BaseModel):
 
 class ItemRequest(BaseModel):
     name: str
-    description: str | None = None
+    description: Optional[str] = None
     price: float
 
 
 class ItemResponse(BaseModel):
     id: int
     name: str
-    description: str | None = None
+    description: Optional[str] = None
     price: float
